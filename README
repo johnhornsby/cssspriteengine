@@ -1,0 +1,17 @@
+Simple JS Lib to animate spritesheets
+
+var options = {};
+options.url = "images/testSeq.png";
+options.frameWidth = 64;
+options.frameHeight = 68;
+options.totalFrames = 60;
+options.loop = true;
+options.autoPlay = false;
+options.onReady = function(){
+ 	//console.log("onReady")
+};
+var cssSpriteEngine = new CSSSpriteEngine(JQueryObjectContainer,options);
+
+cssSpriteEngine.play(frame);	//frame optional
+cssSpriteEngine.pause();
+cssSpriteEngine.stop();
